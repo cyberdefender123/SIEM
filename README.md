@@ -1,6 +1,7 @@
 # SIEM
+
+## README for Python SIEM Project
 Build a SIEM using python and mySQL server
-README for Python SIEM Project
 
 Using python to build a customised SIEM. SIEM can read firewall logs and logs sniffed by python (scapy) in real-time.
 
@@ -13,7 +14,8 @@ Using python to build a customised SIEM. SIEM can read firewall logs and logs sn
 Uses Scapy to sniff the interface and continuously writes logs into a log file.
 
 #### Parser.py
-SIEM database is built on the Ubuntu Server and logs are first converted into the correct format and then parsed from the log file into the database in real-time. Format required - 
+SIEM database is built on the Ubuntu Server and logs are first converted into the correct format and then parsed from the log file into the database in real-time. 
+Format required - 
 DATETIME  -  SOURCE_IP  -  DEST_IP  -  PORT  -  ACTION
 
 #### Analyser.py
