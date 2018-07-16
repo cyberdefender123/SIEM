@@ -9,14 +9,14 @@ Ubuntu Linux Server 1604 with mySQL
 Python
 
 ## Python Scripts:
-###### Sniffer.py
+#### Sniffer.py
 Uses Scapy to sniff the interface and continuously writes logs into a log file.
 
-###### Parser.py
+#### Parser.py
 SIEM database is built on the Ubuntu Server and logs are first converted into the correct format and then parsed from the log file into the database in real-time. Format required - 
 DATETIME  -  SOURCE_IP  -  DEST_IP  -  PORT  -  ACTION
 
-###### Analyser.py
+#### Analyser.py
 Analyses the logs in the database and sends an alert for specific attacks: a specific port contacted, a port scan of more than 10 ports from same source ip, a ping sweep and a ping sweep in less than 10 seconds. The analyser is set to run automatically every 5 seconds, checking for new attacks.
 
 ## Log Files:
